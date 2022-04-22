@@ -11,9 +11,7 @@ const App = () => {
         <h1>React-Redux Todo App</h1>
       </div>
       <TodoInput />
-      <div className="todo-container">
       <TodoCardList />
-      </div>
     </div>
   );
 }

@@ -19,7 +19,6 @@ export const todoSlice = createSlice({
         },
         deleteTodo: (state, action) => {
             const index = state.findIndex((todo) => todo.id === action.payload.id)
-            debugger;
             state.splice(index,1)
         }
 

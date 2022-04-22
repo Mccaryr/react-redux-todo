@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
 import { toggleComplete, deleteTodo } from "../../features/Todo/TodoSlice"
+import './TodoCard.scss'
 
 const TodoCard = ({todo}) => {
     const dispatch = useDispatch()
@@ -13,7 +14,7 @@ const TodoCard = ({todo}) => {
     }
 
   return (
-    <div>
+    <div className="card">
         <input 
         type="checkbox"
         checked={todo.completed}
